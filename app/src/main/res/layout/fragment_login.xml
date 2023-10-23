@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textColor="#1E293B"
+        android:textSize="35sp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/usernamelogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#828282"
+        android:hint="Username"
+        android:padding="12dp"
+        />
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/usernamelogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:padding="12dp"
+        android:textColor="#828282" />
+    <CheckBox
+        android:id="@+id/ket1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlogin"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="35dp"
+        android:textSize="10dp"
+        android:text="Remember Me"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/ket2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlogin"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="10dp"
+        android:text="Forget Password ?"
+        android:textColor="#525BFF"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ket1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/buttonregister"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="75dp"
+        android:paddingLeft="30dp"
+        android:text="New Member ?"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_marginBottom="75dp"/>
+
+</RelativeLayout>

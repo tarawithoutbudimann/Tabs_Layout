@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Register"
+        android:textColor="#1E293B"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#828282"
+        android:hint="Username"
+        android:padding="12dp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="256dp"
+        android:backgroundTint="@color/white"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#828282" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:hint="Phone"
+        android:padding="12dp"
+        android:textColor="#828282" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#828282" />
+    <CheckBox
+        android:id="@+id/keterangan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="10dp"
+        android:text="By checking the box you agree to our Terms and Conditions."
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keterangan1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/buttonregister"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="75dp"
+        android:paddingLeft="5dp"
+        android:text="Already Have an Account ?"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/login10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#525BFF"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="75dp"
+        android:paddingRight="2dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_marginBottom="75dp"/>
+
+</RelativeLayout>
